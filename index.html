@@ -1,0 +1,54 @@
+<!--
+
+Filename: index.html
+Created: Aadarsha Shrestha (aadarsha.shrestha.nepal@gmail.com)
+
+Default webpage that shows the fulfillment of the given requirements.
+The given activity was:
+
+1.You have to write a code for a web page
+2.The web page needs to have a circle (Radius can be any size)
+3.The circle needs to have 3 colour options on its right side displayed vertically (Black,Blue and Red)
+4.The colour displayed should be the actual colour black, blue and Red (Any shade) and not just words.
+5.When the user selects the Black colour the circle should fill with the colour black. When the user selects the colour Blue the circle needs to change its colour to Blue and when the user selects the colour Red the circle will change the colour to Red.
+
+
+-->
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel = "stylesheet" type = "text/css" href = "theme.css" />
+    <title>Web Circle Color Changer</title>
+  </head>
+  <body>
+
+    <!-- Left side of the vertically divided page -->
+    <div style="float:left; width:50%;">
+      
+      <!-- Draws Canvas element -->
+      <canvas id="myCanvas" width="500" height="500"></canvas>
+
+      <!-- Links JavaScript file for drawing circle -->
+      <script type = "text/javascript" src = "circle.js"></script>
+    </div>
+
+    <!-- Right side of the vertically divided page -->
+    <div style="float:left; width:50%;">
+
+      <!-- For choosing the color -->
+      <h3>Please choose the color:</h3>
+      <table>
+        <tr>
+          <th id="black" style="background-color:black;width:300px; height:50px;" onclick="colorChanger(this)"></th>
+        </tr>
+          <th id="blue" style="background-color:blue;width:300px; height:50px;" onclick="colorChanger(this)"></th>
+        </tr>
+          <th id="red" style="background-color:red;width:300px; height:50px;"  onclick="colorChanger(this)"></th>
+        </tr>
+      </table>
+    </div>
+
+
+  </body>
+</html> 
